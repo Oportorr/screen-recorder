@@ -1,3 +1,11 @@
+This code goes along with a course on the freeCodeCamp.org YouTube channel titled "Build Your Own Video Sharing App – Loom Clone with Next.js and Mux JavaScript Tutorial".
+
+Here is the course: https://youtu.be/IBTx5aGj-6U
+
+Check out the `auth` branch for the auth code at the end of the video.
+
+----
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
