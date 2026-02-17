@@ -5,6 +5,7 @@ import VideoStatusPoller from '@/components/VideoStatusPoller';
 import ShareButton from '@/components/ShareButton';
 import VideoSummary from '@/components/VideoSummary';
 import { ArrowLeft, Download } from 'lucide-react';
+import { getSignedPlaybackToken } from '@/app/actions';
 
 export default async function VideoPage({ 
     params 
@@ -18,6 +19,8 @@ export default async function VideoPage({
     const isTranscriptReady = transcriptStatus === 'ready';
 
     const downloadUrl = `https://stream.mux.com/${playbackId}/high.mp4?download=screen-recording.mp4`;
+
+    const token = await getSignedPlaybackToken(playbackId);
 
     return (
         <main className="min-h-screen bg-slate-950 p-6 md:p-12 text-slate-200">
@@ -39,7 +42,7 @@ export default async function VideoPage({
             <div className="bg-black rounded-2xl overflow-hidden shadow-2xl border border-slate-800 aspect-video relative">
                 {isVideoReady ? (
                 <>
-                    <MuxPlayerWrapper playbackId={playbackId} />
+                    <MuxPlayerWrapper playbackId={playbackId} token={token}/>
                     {!isTranscriptReady && <VideoStatusPoller id={playbackId} isVideoReady={true} />}
                 </>
                 ) : (
