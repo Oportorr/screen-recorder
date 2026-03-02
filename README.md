@@ -4,6 +4,11 @@ Here is the course: https://youtu.be/IBTx5aGj-6U
 
 Check out the `auth` branch for the auth code at the end of the video.
 
+Learn more about Mux:
+- Mux: https://www.mux.com
+- Mux Docs: https://www.mux.com/docs
+- @Mux/ai: https://github.com/muxinc/ai
+
 ----
 
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
