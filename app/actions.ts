@@ -22,14 +22,14 @@ export async function createUploadUrl() {
                     ]
                 },
                 {
-                  url: 'https://oscarsoft.operp.net/logo_tr_O_36x36.png',     
-                  overlay_settings: { 
-                    vertical_align: 'top', 
-                    vertical_margin  :'20px',
-                    horizontal_align: 'right', 
-                    horizontal_margin: '20px',
-                    width: '150px',
-                    opacity: '80%'         
+                  url: 'https://oscarsoft.operp.net/logo_O_36x36.png',
+                  overlay_settings: {
+                    vertical_align: 'bottom',
+                    vertical_margin  :'5%',
+                    horizontal_align: 'right',
+                    horizontal_margin: '2%',
+                    width: '100px',
+                    opacity: '98%'         
                 
                 
                 
