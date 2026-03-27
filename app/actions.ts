@@ -1,6 +1,8 @@
 'use server';
 
 import Mux from '@mux/mux-node';
+import { cookies } from 'next/headers';
+import jwt from 'jsonwebtoken';
 
 const mux = new Mux({
     tokenId: process.env.MUX_TOKEN_ID,
@@ -18,6 +20,27 @@ export async function createUploadUrl() {
                     generated_subtitles: [
                         { language_code: 'en', name: 'English (Auto)' }
                     ]
+                },
+                {
+                  url: 'https://oscarsoft.operp.net/logo_tr_O_36x36.png',     
+                  overlay_settings: { 
+                    vertical_align: 'top', 
+                    vertical_margin  :'20px',
+                    horizontal_align: 'right', 
+                    horizontal_margin: '20px',
+                    width: '150px',
+                    opacity: '80%'         
+                
+                
+                
+                
+                
+                }
+
+
+
+
+
                 }
             ]
         },
