@@ -23,13 +23,21 @@ export default function Home() {
             <Video className="w-6 h-6 text-white" />
           </div>
           <h1 className="text-3xl md:text-4xl font-extrabold text-white tracking-tight">
-            Loom Clone provide by <a href="https://OscarSoft.net" target="_blank"rel="noopener noreferrer"> OscarSoft.net</a>
+            Loom Clone provide by{" "}
+            <a
+              href="https://OscarSoft.net"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {" "}
+              OscarSoft.net
+            </a>
           </h1>
           <p className="text-slate-400 text-sm md:text-base">
             Next.js 15 + Mux + AI Transcripts
           </p>
           <a
-            href="https://oscarsoft.net"
+            href="https://oscarsoft2.net"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block text-blue-400 hover:text-blue-300 text-sm transition"
