@@ -1,8 +1,6 @@
 'use server';
 
 import Mux from '@mux/mux-node';
-import { cookies } from 'next/headers';
-import jwt from 'jsonwebtoken';
 
 const mux = new Mux({
     tokenId: process.env.MUX_TOKEN_ID,
